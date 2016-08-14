@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>What's the weather like outside?</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="/styles/basic.css">
   <meta charset="utf-8"/>
 </head>
-<div class="container">
-  <body>
-    <h1>FIND THE WEATHER HERE.</h1>
-  </body>
-</div>
 
+<body>
+  <div class="wrapper">
+    <h2>Weather Application</h2>
+
+    <p>Click the button below to check the temperature at <i><b>your</b></i> geolocation!</p>
+    <button id="geoTemp">Geolocate me!</button>
+
+    <p> OR enter your zipcode below! </p>
+    ZIPCODE: <input type="number" id="zip" />
+    <button id="zipTemp">Search</button>
+
+    <h3> The temperature is </h3>
+    <p id="result">? °F</p>
+  </div>
+  <footer>
+    Powered by <a href="http://openweathermap.org/api">OpenWeatherMap</a> and <a href="https://jquery.com/">jQuery</a>.
+    <br> Written by <a href="mailto:gbhamra2@gmail.com">Guru Bhamra.</a>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
 </html>
