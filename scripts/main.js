@@ -8,7 +8,7 @@ $(document).ready(function () {
       function gotLocation(position) {
         lat = position.coords.latitude;
         lon = position.coords.longitude;
-        apiURLGeoloc = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
+        apiURLGeoloc = 'https://api.openweathermap.org/data/2.5/weather?lat=' +
                   lat + '&lon=' +
                   lon + '&units=imperial&appid=7e3f1ebcbe9e9d741b6a90449b677910';
 
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
   $('#zipTemp').click(function() {
     zip = $("#zip").val();
-    apiURLZip = 'http://api.openweathermap.org/data/2.5/weather?zip=' +
+    apiURLZip = 'https://api.openweathermap.org/data/2.5/weather?zip=' +
               zip + '&units=imperial&appid=7e3f1ebcbe9e9d741b6a90449b677910';
 
       $.ajax({
